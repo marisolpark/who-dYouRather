@@ -3,6 +3,8 @@ main{
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(#e66465, #9198e5);
+    height: vh;
 }
 
 /* Propt changes */
@@ -13,8 +15,8 @@ main{
     border-radius: 50em;
     font-family: 'Fredoka One', cursive;
     line-height: 20px;
-    padding-top: 30px;
-    padding-bottom: 20px;
+    padding-top: 50px;
+    padding-bottom: 40px;
     border: 20px solid black;
     margin-bottom: 40px;
     margin-top: 40px;
@@ -48,7 +50,7 @@ h2{
 }
 
 .celebbox2{
-    background-color: aqua;
+    background-color: black;
     width: 300px;
     height: 300px;
     border-radius: 3em;

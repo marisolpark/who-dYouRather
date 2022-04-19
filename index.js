@@ -58,6 +58,7 @@ $(choose).click(function(){
 var prompt= document.getElementById("prompt");
 $(prompt).dblclick(function(){
     container.style.opacity="100%";
+    num=num;
     console.log("You have started the game");
  }
 )
@@ -123,24 +124,31 @@ function stop(){
         $('button').click(function(event){
             lastClicked = event.target.className;
             console.log(lastClicked);
-          
-            if (lastClicked = img1){
-                celeb2.style.display="none";
-            }
-           
-            prompt.style.display="none";
-        });
 
-    
+     if (lastClicked = img1){
         
+        celeb2.style.display="none";
+        celeb1.style.display="block";
+    }
+    else if (lastClicked = img2){
+        celeb1.style.display="none";
+        celeb2.style.display="block";
+    }
 
-       
-    });
-    
+    prompt.innerHTML="You Got..." 
+    prompt.style.fontSize="400%";
+    celeb1.style.height="600px";
+    celeb2.style.height="600px";
+    celeb1.style.width="600px";
+    celeb2.style.width="600px";
+    img1.style.height="500px";
+    img2.style.height="500px";
+    img1.style.width="500px";
+    img2.style.width="500px";
 
-    // else{
-    //     celeb2.style.display="none";
-    // }
+
+        });
+     });
 }
 
 
