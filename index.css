@@ -1,0 +1,69 @@
+main{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Propt changes */
+.prompt{
+    width: 40%;
+    text-align: center;
+    background-color: rgb(112, 202, 255);
+    border-radius: 50em;
+    font-family: 'Fredoka One', cursive;
+    line-height: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border: 20px solid black;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+h1{
+    font-size: xx-large;
+}
+
+h2{
+    font-size: 400%;
+    color: rgb(255, 0, 140);
+}
+
+.celebCont{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    opacity: 0%;
+}
+
+.celebbox1{
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    border-radius: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.celebbox2{
+    background-color: aqua;
+    width: 300px;
+    height: 300px;
+    border-radius: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img1{
+    width: 250px;
+    border-radius: 3em;
+}
+
+.img2{
+    width: 250px;
+    border-radius: 3em;
+}
+
