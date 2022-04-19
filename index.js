@@ -37,18 +37,18 @@ var celebs = [
 ]
 
 // PROMPT-----------------------------------------------------------------
-var choosePrompt= ["Marry?", "Slap?", "Parent?", "Ghost?", "Kiss?","..."]
+var choosePrompt= ["Marry", "Slap", "Parent", "Ghost", "Kiss","..."]
 
 var container = document.getElementById("celebCont");
 
 
 var choose= document.getElementById("choose");
 var num = 0;
-choose.innerHTML= choosePrompt[num];
+choose.innerHTML= choosePrompt[num] + "?";
 $(choose).click(function(){
     console.log("next");
     num = num+1;
-    choose.innerHTML= choosePrompt[num];
+    choose.innerHTML= choosePrompt[num] + "?";
     if(num>4){
         num = -1;
     }
@@ -135,16 +135,19 @@ function stop(){
         celeb2.style.display="block";
     }
 
-    prompt.innerHTML="You Got..." 
-    prompt.style.fontSize="400%";
-    celeb1.style.height="600px";
-    celeb2.style.height="600px";
-    celeb1.style.width="600px";
-    celeb2.style.width="600px";
-    img1.style.height="500px";
-    img2.style.height="500px";
-    img1.style.width="500px";
-    img2.style.width="500px";
+    prompt.innerHTML="You'd Rather " + choosePrompt[num];
+    
+    
+    prompt.style.fontSize="300%";
+    prompt.style.lineHeight="80px";
+    celeb1.style.height="500px";
+    celeb2.style.height="500px";
+    celeb1.style.width="500px";
+    celeb2.style.width="500px";
+    img1.style.height="400px";
+    img2.style.height="400px";
+    img1.style.width="400px";
+    img2.style.width="400px";
 
 
         });
