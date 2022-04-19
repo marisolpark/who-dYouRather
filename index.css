@@ -3,7 +3,8 @@ main{
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(#e66465, #9198e5);
+    /* background: linear-gradient(#e66465, #9198e5); */
+    background-color: black;
     /* height: 1000px; */
 }
 
@@ -11,28 +12,31 @@ main{
 .prompt{
     width: 40%;
     text-align: center;
-    background-color: rgb(112, 202, 255);
+    /* background-color: rgb(112, 202, 255); */
+    background-color: black;
     border-radius: 50em;
     font-family: 'Fredoka One', cursive;
     line-height: 20px;
     padding-top: 50px;
     padding-bottom: 50px;
-    border: 20px solid black;
+    border: 20px solid rgb(115, 255, 0);
     margin-bottom: 40px;
     margin-top: 40px;
 }
 
 h1{
     font-size: xx-large;
+    color: white;
 }
 
 h2{
     font-size: 400%;
-    color: rgb(255, 0, 140);
+    /* color: rgb(255, 0, 140); */
+    color:rgb(115, 255, 0);
 }
 h2:hover{
     /* font-size: 500%; */
-    color: rgb(48, 44, 250);
+    color: rgb(255, 242, 0);
     animation: smallBig 1s infinite;
 }
 
@@ -64,7 +68,8 @@ h2:hover{
     align-items: center;
 }
 .celebbox1:hover{
-    background-color: rgb(48, 44, 250);
+    background-color: rgb(255, 242, 0);
+    /* background-color: rgb(115, 255, 0); */
     animation: shake 0.2s infinite;
 }
 
@@ -78,7 +83,7 @@ h2:hover{
     align-items: center;
 }
 .celebbox2:hover{
-    background-color: rgb(48, 44, 250);
+    background-color: rgb(115, 255, 0);
     animation: shake 0.2s infinite;
 }
 
@@ -105,5 +110,22 @@ h2:hover{
 .img2{
     width: 300px;
     border-radius: 3em;
+}
+
+.playAgainButton{
+    border-radius: 2em;
+    padding: 7px;
+    background-color: rgb(115, 255, 0);
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Fredoka One', cursive;
+    font-size: 250%;
+}
+.playAgainButton:hover{
+    background-color: white;
 }
 

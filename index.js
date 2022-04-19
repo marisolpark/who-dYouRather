@@ -136,9 +136,8 @@ function stop(){
     }
 
     prompt.innerHTML="You'd Rather " + choosePrompt[num];
-    
-    
     prompt.style.fontSize="300%";
+    prompt.style.color="rgb(115, 255, 0)";
     prompt.style.lineHeight="80px";
     celeb1.style.height="500px";
     celeb2.style.height="500px";
@@ -148,11 +147,19 @@ function stop(){
     img2.style.height="400px";
     img1.style.width="400px";
     img2.style.width="400px";
-
-
+    container.appendChild(playAgain);
+    container.style.display="block";
         });
      });
 }
+
+var playAgain= document.createElement("button");
+playAgain.innerHTML="Play Again";
+playAgain.className="playAgainButton";
+$(playAgain).click(function(){
+    num=0;
+    window.location.reload();
+})
 
 
 
